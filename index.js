@@ -36,6 +36,7 @@ const assign = function(){
     for(let i = 0; i<randNames.length; i++){
         let x = randNames[Math.random()*(randNames.length)]
         chosenName.push(x)
+        randNames.splice((x+1),1)
 
     }
 }
