@@ -18,18 +18,23 @@
 
   <body>
 
-    <div class="row">
-        <div class="col">
-          <input type="text" id="firstname" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-          <input type="text" id="lastname" class="form-control" placeholder="Last name">
-        </div>
-    </div>
+    <h1>Teams</h1>
 
-    <button onclick="nameList()" class="btn btn-primary" type="submit">Submit</button>    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+              <input type="text" id="firstname" class="form-control" placeholder="First name">
+            </div>
+            <div class="col-6">
+              <input type="text" id="lastname" class="form-control" placeholder="Last name">
+            </div>
+        </div>
     
-    <input id="teamnr" type="number" placeholder="how many teams">
+        <button onclick="nameList()" class="btn btn-primary" type="submit">Submit</button>    
+    
+        <input id="teamnr" type="number" placeholder="how many teams">
+
+    </div>       
 
 
     <button onclick="team()" class="btn btn-primary" type="submit">Submit</button>    
