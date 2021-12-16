@@ -20,6 +20,7 @@ const nameList = function(){
     item.innerText =firstName.value + " " + lastName.value
     list.appendChild(item)
     randNames.push(item.innerText)
+    console.log(randNames)
   
 }
 
@@ -36,11 +37,13 @@ let teams = document.getElementById("teamnr").value
 }
 
 const assign = function(){
-    for(let i = 0; i<randNames.length; i++){
-        let x = randNames[Math.random()*(randNames.length)]
+
+        let x = randNames[Math.floor(Math.random())*(randNames.length)]
         chosenName.push(x)
         randNames.splice((x-1),1)
-    }
+        console.log(chosenName,randNames)
+    
+
 }
 
 
