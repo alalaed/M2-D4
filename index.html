@@ -12,6 +12,22 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <style>
+
+        #submit{
+            display: block;
+            align-content: center;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
   </head>
 
   
@@ -30,14 +46,33 @@
             </div>
         </div>
     
-        <button onclick="nameList()" class="btn btn-primary" type="submit">Submit</button>    
-    
-        <input id="teamnr" type="number" placeholder="how many teams">
+        <button onclick="nameList()" id="submit" class="btn btn-primary " type="submit">Submit</button>    
 
-    </div>       
+    </div> 
+          
+    <div class="container mt-5">
+        <div class="row">
+            <input id="teamnr" type="number" class="form-control" placeholder="how many teams">
+        
+        
+            <button id="submit" onclick="team()" class="btn btn-primary" type="submit">Submit</button>
+        </div>  
+    </div>  
 
 
-    <button onclick="team()" class="btn btn-primary" type="submit">Submit</button>    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            
+            <div id="players" class="col-6">
+                <h4>Players</h4>
+            </div>
+            
+            <div id="teams" class="col-6">
+                <h4>Teams</h4>
+            </div>
+        </div>
+
+    </div>
 
   </body>
 
