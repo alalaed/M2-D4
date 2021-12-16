@@ -21,9 +21,10 @@ const nameList = function(){
   
 }
 
-let teams = document.getElementById("teamnr").value
 
-const team = function(teams){
+const team = function(){
+   
+let teams = document.getElementById("teamnr").value
     for(i=0;i<teams;i++){
         let teamlist = document.createElement("ol")
         body[0].appendChild(teamlist)
@@ -36,8 +37,7 @@ const assign = function(){
     for(let i = 0; i<randNames.length; i++){
         let x = randNames[Math.random()*(randNames.length)]
         chosenName.push(x)
-        randNames.splice((x+1),1)
-
+        randNames.splice((x-1),1)
     }
 }
 
